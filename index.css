@@ -96,6 +96,20 @@ nav ul {
     -webkit-overflow-scrolling: touch; /* para suavidad en iOS */
 }
 
+.carousel-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5em;
+}
+
+.carousel-item {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    flex-basis: 80vw;
+    max-width: 300px;
+}
+
 
 
 /* =================
