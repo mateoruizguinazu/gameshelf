@@ -139,12 +139,16 @@ nav ul {
     justify-content: end;
     position: relative;
     padding: 1em;
-    height: 352px;
+    height: 452px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.game-card,
+.recommended-game-cover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .game-card::after {
@@ -219,9 +223,13 @@ nav ul {
     padding: 0.25em 0.375em;
     background: var(--dark);
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.game-card p {
+.game-card p,
+.recommended-game-info p {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -231,9 +239,52 @@ nav ul {
 
 
 
+
+/* =================
+    Recommended games 
+   ================= */
+
+.recommended-games {
+    padding: 1em;
+}   
+
+.recommended-games ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.recommended-games article {
+    display: flex;
+    gap: 1em;
+}
+
+.recommended-game-cover {
+    width: 30vw;
+    min-width: 120px;
+    max-width: 200px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    padding: 0.25em;
+}
+
+.recommended-game-info {
+    margin-bottom: 1.5em;
+}
+
+
 /* =================
     Text 
    ================= */
+
+h2,
+h3 {
+    margin: 0;
+}
 
 a, 
 a:visited {
